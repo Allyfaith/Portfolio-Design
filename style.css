@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Exo:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap');
+/* ^^ Update import to only necessary ones ^^ */
+
+/*CSS for all*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #171C3D;
+    margin: 0;
+    padding: 0;
+    cursor: none;
+}
+
+p, ul, li, label{
+    font-family: "Exo", sans-serif;
+    color:white;
+}
+
+a {
+    text-decoration:none;}  
+
+.title{
+    font-family: "Special Gothic Expanded One", sans-serif;
+    color:white;
+}
+
+[data-reveal="left"]{clip-path: inset(0 100% 0 0);}
+[data-reveal="left"].revealed{
+  animation: reveal-left 1.2s cubic-bezier(0.17, 0.97, 0.38, 1) forwards 300ms;
+}
+
+@keyframes reveal-left{
+  0%{
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[data-reveal="right"]{clip-path: inset(0 0 0 100%);}
+[data-reveal="right"].revealed{
+  animation: reveal-right 1.2s cubic-bezier(0.17, 0.97, 0.38, 1) forwards 300ms;
+}
+
+@keyframes reveal-right{
+  0%{
+    clip-path: inset(0 0 0 100%);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/*Cursor*/
+.asteroid {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: rgb(255, 255, 255);
+  position: fixed; 
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999; 
+}
+
+/*Home Page CSS*/
+
+
+#index{
+    background-image: url("assets/blackog.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#intro{
+    text-align: center;
+    margin-bottom: 200px;
+   
+}
+
+.box{
+  width: 48%;
+  height: 400px;
+  display: inline-block;
+  font-size: 25px;
+}
+
+.astronaut-img{
+  height: 100%;
+  background-image: url('/assets/astronautHome.png');
+  background-size: 30%;
+  background-repeat: no-repeat;
+  padding: 5px;
+  margin-left: 250px;
+  padding-top: -100px;
+}
+
+.avatar-img{
+  height: 800px;
+  background-image: url('/assets/spriteComp.png');
+  background-size: 70%;
+  background-repeat: no-repeat;
+  margin-left: 250px;
+}
+
+.bio{
+    text-align: center;
+    max-width: 450px;
+    margin: 20px auto;
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+}
+
+.itsaMe{
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    padding-left: 100px;
+}
+
+.opener{
+    font-family: "Special Gothic Expanded One", sans-serif;
+    color:white;
+    font-size: 95px;
+    margin-top: 110px;
+}
+
+.phrase{
+    font-family: "Bruno Ace SC", sans-serif;
+    text-align: right;
+    margin-right: 120px;
+    margin-bottom: 1000px;
+    color: #FFF875;
+    font-size: 50px;
+}
+
+
+/*About Page CSS*/
+#about{
+    padding-top: 60px;
+}
+
+/*The planets of the About page only were made using, https://deep-fold.itch.io/pixel-planet-generator*/
+
+.boxOne{
+  width: 48%;
+  height: 500px;
+  display: inline-block;
+  font-size: 25px;
+}
+
+.boxTwo{
+  width: 48%;
+  height: 500px;
+  display: inline-block;
+  margin-left: 30px;
+  font-size: 25px;
+}
+
+.planetOne-img{
+  height: 100%;
+  background-image: url('/assets/planetOne.gif');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  padding: 5px;
+  margin-left: 250px;
+  margin-top: 250px;
+}
+
+
+
+.planetTwo-img{
+  height: 100%;
+  background-image: url('/assets/planetTwo.gif');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  padding: 5px;
+  margin-left: 250px;
+  margin-top: 210px;
+}
+
+
+/*Projects Page CSS*/
+#projects{
+    padding-top: 80px;
+}
+.compCode-img{
+  height: 100%;
+  background-image: url('/assets/compCode.png');
+  background-size: 70%;
+  background-repeat: no-repeat;
+  padding: 5px;
+  margin-left: 250px;
+  margin-top: 250px;
+}
+
+.compTaipan-img{
+  height: 100%;
+  background-image: url('/assets/compTaipan.png');
+  background-size: 70%;
+  background-repeat: no-repeat;
+  padding: 5px;
+  margin-left: 250px;
+  margin-top: 200px;
+}
+
+.compMaze-img{
+  height: 100%;
+  background-image: url('/assets/compMaze.png');
+  background-size: 70%;
+  background-repeat: no-repeat;
+  padding: 5px;
+  margin-left: 250px;
+  margin-top: 250px;
+}
+
+
+/*ProjectOne Page CSS*/
+#projectOne{
+    margin-top: 60px;
+}
+
+.Code-img{
+  height: 600px;
+  background-image: url('/assets/compCode.png');
+  background-size: 75%;
+  background-repeat: no-repeat;
+  padding: 5px;
+  margin-left: 150px;
+  margin-top: -100px;
+}
+
+.boxProject{
+  width: 48%;
+  height: 800px;
+  display: inline-block;
+  font-size: 25px;
+}
+
+/*ProjectTwo Page CSS*/
+#projectTwo{
+    margin-top: 60px;
+}
+
+.Taipan-img{
+  height: 600px;
+  background-image: url('/assets/compTaipan.png');
+  background-size: 75%;
+  background-repeat: no-repeat;
+  padding: 5px;
+  margin-left: 150px;
+  margin-top: -100px;
+}
+
+/*ProjectThree Page CSS*/
+#projectThree{
+    margin-top: 60px;
+}
+
+.Maze-img{
+  height: 850px;
+  background-image: url('/assets/compMaze.png');
+  background-size: 75%;
+  background-repeat: no-repeat;
+  padding: 5px;
+  margin-left: 150px;
+}
+
+
+/*Skills Page CSS*/
+#skills{
+    margin-top: 60px;
+}
+
+.astroTech-img{
+  height: 100%;
+  background-image: url('/assets/astroTech.png');
+  background-size: 70%;
+  background-repeat: no-repeat;
+  padding: 5px;
+  margin-left: 250px;
+  margin-top: 250px;
+}
+
+.astroNoTech-img{
+  height: 100%;
+  background-image: url('/assets/astroNoTech.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 5px;
+  margin-left: 250px;
+  margin-top: 100px;
+}
+
+/*Contact Page CSS*/
+#contact{
+    margin-top: 60px;
+    font-size: 25px;
+}
+
+.fname, .lname, .reasons, .sender{
+    background-color: #71d8f1e1;
+    border-radius: 15px;
+}
+
+.astroContact-img{
+  height: 100%;
+  background-image: url('/assets/astroContact.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 5px;
+}
